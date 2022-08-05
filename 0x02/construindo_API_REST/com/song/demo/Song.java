@@ -61,4 +61,9 @@ public class Song {
     public void setAnoLancamento(String anoLancamento) {
         this.anoLancamento = anoLancamento;
     }
+
+    @Override
+    public String toString() {
+        return String.format("%d - %s - %s - %s - %s", id, nome, artista, album, anoLancamento)
+    }
 }
