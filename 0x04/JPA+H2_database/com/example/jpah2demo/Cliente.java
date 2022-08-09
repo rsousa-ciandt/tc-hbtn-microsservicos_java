@@ -1,4 +1,4 @@
-package com.example.jpa;
+package com.example.jpah2demo;
 
 import javax.persistence.*;
 import java.util.List;

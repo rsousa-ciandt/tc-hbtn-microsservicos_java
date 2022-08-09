@@ -1,4 +1,4 @@
-package com.example.jpa;
+package com.example.jpah2demo;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
