@@ -1,5 +1,6 @@
 package com.example.user.controller;
 
+import com.example.user.exception.CPFException;
 import com.example.user.exception.UserIdException;
 import com.example.user.exception.UserNameException;
 import org.springframework.http.ResponseEntity;
@@ -26,7 +27,7 @@ public class UserController {
         int cpfLength = cpf.length();
 
         if (cpfLength <= 3 || cpfLength >= 15) {
-            throw new UserNameException("You have entered invalid CPF");
+            throw new CPFException("You have entered invalid CPF");
         }
 
         return ResponseEntity.ok("You have entered valid CPF");
